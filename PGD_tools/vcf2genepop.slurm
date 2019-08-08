@@ -13,6 +13,5 @@ module load PGDSpider
 
 
 
-java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./v6_kwFix_snps.recode.vcf -inputformat VCF -outputfile ./v6_kwFix_snps.gen -outputformat GENEPOP -spid ./vcf2gen.spid
-
+java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./v6_novoseq2_snps_genomic.recode.vcf -inputformat VCF -outputfile ./v6_novoseq2_snps_genomic.gen -outputformat GENEPOP -spid ./vcf2gen.spid
 
