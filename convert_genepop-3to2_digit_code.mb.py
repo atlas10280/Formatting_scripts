@@ -4,14 +4,14 @@
 import os
 import re
 os.getcwd()
-os.chdir("I:\WAE_RAD_Data\BARCODE_REPAIR_data\SNPs")
+os.chdir("Y:/1710_WAE/novoseq2_data/SNPs/Genomics/Great_Lakes/")
 # open vcf file read all lines into an array, close file
-raw_vcf_file = open("v6_bcrepair_snps.gen", "r")
+raw_vcf_file = open("Inland_Filtered_modNames.gen", "r")
 raw_vcf_array = raw_vcf_file.readlines()
 raw_vcf_file.close()
 
 # open file you are going to write new results to
-out_file = open("v6_bcrepair_snps_code2.gen", "w")
+out_file = open("Inland_Filtered_modNames_ncode2.gen", "w")
 
 # for each line in genepop file
 for i in raw_vcf_array:

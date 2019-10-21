@@ -1,0 +1,29 @@
+# spid-file generated: Mon Aug 26 13:10:57 CDT 2019
+
+# GENEPOP Parser questions
+PARSER_FORMAT=GENEPOP
+
+# Enter the size of the repeated motif (same for all loci: one number; different: comma separated list (e.g.: 2,2,3,2):
+GENEPOP_PARSER_REPEAT_SIZE_QUESTION=
+# Select the type of the data:
+GENEPOP_PARSER_DATA_TYPE_QUESTION=SNP
+# How are Microsat alleles coded?
+GENEPOP_PARSER_MICROSAT_CODING_QUESTION=REPEATS
+
+# VCF Writer questions
+WRITER_FORMAT=VCF
+
+# Do you want to save an additional file with reference sequences (non-ambiguity consensus sequences)?
+VCF_WRITER_REFERENCE_QUESTION=false
+# Save reference file
+VCF_WRITER_REFERENCE_FILE_QUESTION=false
+# Numeric SNP data: enter the integer that codes for nucleotide G:
+VCF_WRITER_CODE_G_QUESTION=3
+# Numeric SNP data: enter the integer that codes for nucleotide A:
+VCF_WRITER_CODE_A_QUESTION=1
+# Numeric SNP data: enter the integer that codes for nucleotide T:
+VCF_WRITER_CODE_T_QUESTION=4
+# Specify which data should be included in the VCF file:
+VCF_WRITER_DATA_TYPE_QUESTION=SEQUENCES
+# Numeric SNP data: enter the integer that codes for nucleotide C:
+VCF_WRITER_CODE_C_QUESTION=2
