@@ -8,9 +8,9 @@ import os
 os.getcwd()
 os.chdir("I:\\WAE_RAD_Data\\novoseq2\\SNPs\\Genomics\\run_fineRADstructure")
 # open file you are going to write new results to
-out_file = open("fineRAD_haps.txt", "w")
+out_file = open("fineRAD_genomic_haps.txt", "w")
 # open vcf file read all lines into an array, close file
-raw_vcf_file = open("test_haps.vcf", "r")
+raw_vcf_file = open("v2_genomic_haps.recode.vcf", "r")
 raw_vcf_array = raw_vcf_file.readlines()
 raw_vcf_file.close()
 # for each line in vcf file
@@ -61,12 +61,12 @@ for i in raw_vcf_array:
                 allele_call_1 = haplotypes[allele_k_index1]
                 allele_k_index2 = int(genotype_k[1])
                 allele_call_2 = haplotypes[allele_k_index2]
-            # if the allele calls are identical only write 1
-            if allele_call_1 == allele_call_2:
-                out_file.write("\t" + allele_call_1)
-            # if the allele calls are NOT identical, write both, delimit with a "/"
-            else:
-                out_file.write("\t" + allele_call_1 + "/" + allele_call_2)
+                # if the allele calls are identical only write 1
+                if allele_call_1 == allele_call_2:
+                    out_file.write("\t" + allele_call_1)
+                # if the allele calls are NOT identical, write both, delimit with a "/"
+                else:
+                    out_file.write("\t" + allele_call_1 + "/" + allele_call_2)
         # add eol before moving to next row (haplotype)
         out_file.write("\n")
         
