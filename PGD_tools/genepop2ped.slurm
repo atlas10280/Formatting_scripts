@@ -12,4 +12,4 @@ module load PGDSpider/2.1
 
 
 
-java -Xmx16000m -Xms512m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./v4_MLB_novoseq2_snps_delimited.gen -inputformat GENEPOP -outputfile ./v4_MLB_novoseq2_snps_delimited.ped -outputformat PED -spid ./SPID_genepop2ped.spid
+java -Xmx16000m -Xms512m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./v7_genomic_snps.gen -inputformat GENEPOP -outputfile ./v7_genomic_snps.ped -outputformat PED -spid ./SPID_genepop2ped.spid

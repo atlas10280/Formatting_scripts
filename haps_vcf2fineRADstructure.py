@@ -6,11 +6,11 @@
 #set working directory
 import os
 os.getcwd()
-os.chdir("I:\\WAE_RAD_Data\\novoseq2\\SNPs\\Genomics\\run_fineRADstructure")
+os.chdir("I:\\WAE_RAD_Data\\novoseq2\\SNPs\\Genomics\\FIS_filtered_work")
 # open file you are going to write new results to
-out_file = open("fineRAD_genomic_haps.txt", "w")
+out_file = open("fineRAD_haps.txt", "w")
 # open vcf file read all lines into an array, close file
-raw_vcf_file = open("v2_genomic_haps.recode.vcf", "r")
+raw_vcf_file = open("v2_genomic_haps.vcf", "r")
 raw_vcf_array = raw_vcf_file.readlines()
 raw_vcf_file.close()
 # for each line in vcf file
