@@ -13,5 +13,5 @@ module load PGDSpider
 
 
 
-java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./whitelisted_snps_inland-GL.gen -inputformat GENEPOP -outputfile ./whitelisted_snps_inland-GL.vcf -outputformat VCF -spid ./gen2vcf.spid
+java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./whitelisted_snps_inland-GL.gen -inputformat GENEPOP -outputfile ./whitelisted_snps_inland-GL.vcf -outputformat VCF -spid ./genepop2vcf.spid
 

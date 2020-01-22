@@ -12,4 +12,4 @@ module load PGDSpider/2.1
 
 
 
-java -Xmx16000m -Xms512m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile './v6_novoseq2_snps_genomic_NATURAL2.gen' -inputformat GENEPOP -outputfile './v6_novoseq2_snps_genomic_NATURAL2.bayescan' -outputformat GESTE_BAYE_SCAN -spid './genepop2BayeScan.spid'
+java -Xmx16000m -Xms512m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile './v6_novoseq2_snps_genomic_NATURAL2.gen' -inputformat GENEPOP -outputfile './v6_novoseq2_snps_genomic_NATURAL2.bayescan' -outputformat GESTE_BAYE_SCAN -spid './genepop2bayeScan.spid'
