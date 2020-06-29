@@ -26,7 +26,7 @@ raw_vcf_file.close()
 # for each line in genepop file
 line_n = 0
 pop_name = "EMPTY"
-raw_vcf_array[22167]
+raw_vcf_array[55112]
 
 
 for i in raw_vcf_array:
@@ -49,7 +49,7 @@ for i in raw_vcf_array:
          #print(line_n)
          out_file.write(i)
          indv_n = raw_vcf_array[line_n+1].rstrip().split(",")
-         pop_name = indv_n[0][0:7]
+         pop_name = indv_n[0][0:4]
          line_n = line_n+1
     # We enter this loop after handling all the data through INDV 1, now we check every new indv agains this to see if a new pop has been reached
     elif pop_name != "EMPTY":
@@ -77,11 +77,11 @@ for i in raw_vcf_array:
         # if the line start does not look like data, then consider it a name and check it agains the current POP batch
         else:
             # if it looks to be from the same pop, write line and continue
-            if i.rstrip().split(",")[0][0:7] == pop_name:
+            if i.rstrip().split(",")[0][0:4] == pop_name:
                 out_file.write(i)
                 line_n = line_n+1 
             # if the pop[i] doesn't look the same, insert a pop ID, then write the individual on a new line, then reset the POP ID to the new pop batch
-            elif i.rstrip().split(",")[0][0:7] != pop_name:
+            elif i.rstrip().split(",")[0][0:4] != pop_name:
                 out_file.write("Pop\n")
                 out_file.write(i)
                 print(pop_name)

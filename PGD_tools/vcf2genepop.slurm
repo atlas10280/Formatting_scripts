@@ -13,5 +13,5 @@ module load PGDSpider
 
 
 
-java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./v2_genomic_haps.vcf -inputformat VCF -outputfile ./v2_genomic_haps.gen -outputformat GENEPOP -spid ./vcf2genepop.spid
+java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./RAD_SNPs_GT_seq_positions.recode.vcf -inputformat VCF -outputfile ./RAD_SNPs_GT_seq_positions.recode.gen -outputformat GENEPOP -spid ./vcf2genepop.spid
 

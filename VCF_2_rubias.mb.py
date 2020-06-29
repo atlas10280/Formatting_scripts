@@ -9,14 +9,14 @@ Created on Fri Apr  5 08:38:03 2019
 import os
 import re
 os.getcwd()
-os.chdir("I:\WAE_RAD_Data\STACKS_publish\Populations\SNP")
+os.chdir("D:\Great_Lakes_WAE\Genotypes")
 # open vcf file read all lines into an array, close file
-raw_vcf_file = open("v4_populations.snps.vcf", "r")
+raw_vcf_file = open("GL_mm0.7.maf.indv50.mm0.5.indv90.R2.mac4.W.recode.vcf", "r")
 raw_vcf_array = raw_vcf_file.readlines()
 raw_vcf_file.close()
 
 # open file you are going to write new results to
-out_file = open("test2.vcf", "w")
+out_file = open("GL_mm0.7.maf.indv50.mm0.5.indv90.R2.mac4.W.recode_vcf2rubias_SNPs.01.vcf", "w")
 r = 1
 # for each line in vcf file
 a = str(0)
