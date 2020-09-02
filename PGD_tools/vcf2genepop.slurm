@@ -4,7 +4,7 @@
 #SBATCH -o vcf2genepop.out
 #SBATCH -e vcf2genepop.err
 #SBATCH --ntasks 1
-#SBATCH --mail-user=mboot217@uwsp.edu
+#SBATCH --mail-user=mbootsma@uwsp.edu
 #SBATCH --mail-type=begin
 #SBATCH --mail-type=end 
 
@@ -13,5 +13,5 @@ module load PGDSpider
 
 
 
-java -Xmx16384m -Xms16384m -jar /scratch-lustre/wlarson/1710_WAE/PGDSpider2-cli.jar -inputfile ./RAD_SNPs_GT_seq_positions.recode.vcf -inputformat VCF -outputfile ./RAD_SNPs_GT_seq_positions.recode.gen -outputformat GENEPOP -spid ./vcf2genepop.spid
+java -Xmx16384m -Xms16384m -jar ./PGDSpider2-cli.jar -inputfile ./v2_Great_Lakes_WAE_haps.recode.vcf -inputformat VCF -outputfile ./v2_Great_Lakes_WAE_haps.recode.gen -outputformat GENEPOP -spid ./vcf2genepop.spid
 

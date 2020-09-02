@@ -6,7 +6,7 @@
 #set working directory
 import os
 os.getcwd()
-os.chdir("I:\WAE_RAD_Data\STACKS_publish\Populations\Haploid\RAW_haps")
+os.chdir("D:\Great_Lakes_WAE\Genotypes\hap_2")
 # open file you are going to write new results to
 out_file = open("CKMRsim_in_haps2.txt", "w")
 # open vcf file read all lines into an array, close file
